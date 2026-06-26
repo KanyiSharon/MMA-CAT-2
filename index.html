@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <header>
+    <h1>My Image Gallery</h1>
+    <p class="subtitle">A curated collection of moments</p>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/seed/forest/600/400" alt="Forest Path" />
+        <div class="overlay">
+          <span class="label">Nature</span>
+          <p>Forest Path</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="city">
+        <img src="https://picsum.photos/seed/city1/600/400" alt="City Lights" />
+        <div class="overlay">
+          <span class="label">City</span>
+          <p>City Lights</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/abstract1/600/400" alt="Color Burst" />
+        <div class="overlay">
+          <span class="label">Abstract</span>
+          <p>Color Burst</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/seed/mountain/600/400" alt="Mountain View" />
+        <div class="overlay">
+          <span class="label">Nature</span>
+          <p>Mountain View</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="city">
+        <img src="https://picsum.photos/seed/street/600/400" alt="Street Scene" />
+        <div class="overlay">
+          <span class="label">City</span>
+          <p>Street Scene</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/wave/600/400" alt="Light Wave" />
+        <div class="overlay">
+          <span class="label">Abstract</span>
+          <p>Light Wave</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/seed/lake/600/400" alt="Still Lake" />
+        <div class="overlay">
+          <span class="label">Nature</span>
+          <p>Still Lake</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="city">
+        <img src="https://picsum.photos/seed/bridge/600/400" alt="Bridge at Dusk" />
+        <div class="overlay">
+          <span class="label">City</span>
+          <p>Bridge at Dusk</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="https://picsum.photos/seed/geo/600/400" alt="Geometry" />
+        <div class="overlay">
+          <span class="label">Abstract</span>
+          <p>Geometry</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
+    <img src="" alt="" id="lightboxImg" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-next" id="lightboxNext">&#8594;</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 My Image Gallery</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
